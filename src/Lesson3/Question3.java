@@ -1,5 +1,6 @@
 package Lesson3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Question3 {
@@ -15,7 +16,7 @@ public class Question3 {
     O programa devera imprimir na tela o nome e preço do refrigerante selecionado, utilize switch.
      */
 
-    static SoftDrink[] drinks;
+    static Drink[] drinks;
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -64,13 +65,13 @@ public class Question3 {
     }
 
     public static void listOfDrinks() {
-        drinks = new SoftDrink[] {
-                new SoftDrink("Coca-Cola", 5.0),
-                new SoftDrink("Coca-Cola 0", 4.5),
-                new SoftDrink("Pepsi", 4.4),
-                new SoftDrink("Guaraná Antarctica", 3.5),
-                new SoftDrink("Fanta Laranja", 4.23),
-                new SoftDrink("Água", 2.5)
+        drinks = new Drink[] {
+                new Drink("Coca-Cola", 5.0),
+                new Drink("Coca-Cola 0", 4.5),
+                new Drink("Pepsi", 4.4),
+                new Drink("Guaraná Antarctica", 3.5),
+                new Drink("Fanta Laranja", 4.23),
+                new Drink("Água", 2.5)
         };
 
         for (int i = 0; i < drinks.length; i++) {
